@@ -1,76 +1,78 @@
-🧮 First Calculator
+# 🧮 First Calculator
 
 Uma calculadora moderna e elegante desenvolvida com HTML, CSS e JavaScript vanilla, apresentando um design glassmorphism atraente e funcionalidade completa para operações matemáticas básicas.
 
-✨ Características
+## ✨ Características
 
-Design Moderno: Interface glassmorphism com efeitos de blur e transparência
-Responsivo: Layout adaptável para diferentes tamanhos de tela
-Operações Básicas: Adição, subtração, multiplicação e divisão
-Funcionalidades Extras: Botão Clear (C) para limpar tudo
-Backspace (←) para apagar o último dígito
-Visual feedback nos botões com hover e active states
+- **Design Moderno**: Interface glassmorphism com efeitos de blur e transparência
+- **Responsivo**: Layout adaptável para diferentes tamanhos de tela
+- **Operações Básicas**: Adição, subtração, multiplicação e divisão
+- **Funcionalidades Extras**: 
+  - Botão Clear (C) para limpar tudo
+  - Backspace (←) para apagar o último dígito
+  - Visual feedback nos botões com hover e active states
 
-🔥🔥 Design
+## �� Design
 
-Background: Gradiente colorido (rosa, amarelo, verde-azulado)
-Glassmorphism: Efeitos de blur e transparência nos elementos
-Cores: Paleta harmoniosa com destaque para o botão de igual
-Typography: Fonte Dosis para uma aparência moderna
+- **Background**: Gradiente colorido (rosa, amarelo, verde-azulado)
+- **Glassmorphism**: Efeitos de blur e transparência nos elementos
+- **Cores**: Paleta harmoniosa com destaque para o botão de igual
+- **Typography**: Fonte Dosis para uma aparência moderna
 
-🚀 Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 
-HTML5: Estrutura semântica e acessível
-CSS3: Flexbox para layout
-Backdrop-filter para efeitos glassmorphism
-Box-shadow para profundidade
-Gradientes lineares
+- **HTML5**: Estrutura semântica e acessível
+- **CSS3**: 
+  - Flexbox para layout
+  - Backdrop-filter para efeitos glassmorphism
+  - Box-shadow para profundidade
+  - Gradientes lineares
+- **JavaScript ES6**: Lógica da calculadora com funções modulares
 
+## 📁 Estrutura do Projeto
 
-JavaScript ES6: Lógica da calculadora com funções modulares
-
-📁 Estrutura do Projeto
-
+```
 calculator/
 │
 ├── index.html          # Estrutura HTML principal
 ├── style.css           # Estilos e design
 └── script.js           # Lógica JavaScript
+```
 
-🛠️ Funcionalidades Implementadas
+## 🛠️ Funcionalidades Implementadas
 
-Operações Matemáticas
+### Operações Matemáticas
+- ➕ **Adição**: Soma de números
+- ➖ **Subtração**: Subtração de números  
+- ✖️ **Multiplicação**: Multiplicação de números
+- ➗ **Divisão**: Divisão de números
 
-➕ Adição: Soma de números
-➖ Subtração: Subtração de números  
-✖️ Multiplicação: Multiplicação de números
-➗ Divisão: Divisão de números
+### Controles
+- 🔄 **Clear (C)**: Reseta todos os valores
+- ⬅️ **Backspace**: Remove o último dígito inserido
+- 🟰 **Igual**: Executa a operação atual
 
-Controles
+## 💻 Como Usar
 
-🔄 Clear (C): Reseta todos os valores
-⬅️ Backspace: Remove o último dígito inserido
-🟰 Igual: Executa a operação atual
+1. **Clone ou baixe o projeto**
+2. **Abra o arquivo `index.html`** em seu navegador
+3. **Use a calculadora**:
+   - Clique nos números para inserir valores
+   - Clique nos operadores (+, -, ×, ÷) para selecionar operações
+   - Clique em "=" para obter o resultado
+   - Use "C" para limpar ou "←" para apagar
 
-💻 Como Usar
+## 🔧 Código Principal
 
-Clone ou baixe o projeto
-Abra o arquivo index.html em seu navegador
-Use a calculadora:Clique nos números para inserir valores
-Clique nos operadores (+, -, ×, ÷) para selecionar operações
-Clique em "=" para obter o resultado
-Use "C" para limpar ou "←" para apagar
-
-🔧 Código Principal
-
-Variáveis de Estado
-
+### Variáveis de Estado
+```javascript
 let runningTotal = 0;        // Total acumulado
 let buffer = "0";            // Valor atual na tela
 let previousOperator;        // Operador anterior
+```
 
-Função Principal
-
+### Função Principal
+```javascript
 function buttonClick(value) {
     if(isNaN(value)) {
         handleSymbol(value);     // Trata símbolos
@@ -79,28 +81,30 @@ function buttonClick(value) {
     }
     screen.innerText = buffer;   // Atualiza display
 }
+```
 
-🎯 Recursos Técnicos
+## 🎯 Recursos Técnicos
 
-Event Delegation: Um único listener para todos os botões
-Parsing Inteligente: Diferenciação automática entre números e símbolos
-Estado Persistente: Mantém operações em cadeia
-Validação: Previne operações inválidas
+- **Event Delegation**: Um único listener para todos os botões
+- **Parsing Inteligente**: Diferenciação automática entre números e símbolos
+- **Estado Persistente**: Mantém operações em cadeia
+- **Validação**: Previne operações inválidas
 
-🌐 Compatibilidade
+## 🌐 Compatibilidade
 
-✅ Navegadores Modernos: Chrome, Firefox, Safari, Edge
-✅ Dispositivos Móveis: Layout responsivo
-✅ Performance: JavaScript vanilla para máxima velocidade
+- ✅ **Navegadores Modernos**: Chrome, Firefox, Safari, Edge
+- ✅ **Dispositivos Móveis**: Layout responsivo
+- ✅ **Performance**: JavaScript vanilla para máxima velocidade
 
-📱 Layout Responsivo
+## 📱 Layout Responsivo
 
 O design se adapta automaticamente a diferentes tamanhos de tela mantendo a usabilidade e estética em todos os dispositivos.
 
-🎨 Personalização
+## 🎨 Personalização
 
 Para customizar cores ou layout, edite as variáveis CSS:
 
+```css
 /* Gradiente do background */
 background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
 
@@ -108,11 +112,16 @@ background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
 .calc-button:last-child {
     background: #d72880;
 }
+```
 
-🚀 Melhorias Futuras
+## 🚀 Melhorias Futuras
 
-Suporte a números decimais
-Histórico de operações
-Temas alternativos
-Operações avançadas (raiz, potência)
-Suporte a teclado
+- [ ] Suporte a números decimais
+- [ ] Histórico de operações
+- [ ] Temas alternativos
+- [ ] Operações avançadas (raiz, potência)
+- [ ] Suporte a teclado
+
+---
+
+**Desenvolvido com 💖 por Beto** | *Projeto de estudo em desenvolvimento front-end*
